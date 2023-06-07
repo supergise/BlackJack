@@ -16,9 +16,9 @@
     <div class="row mt-2">
         <div id="divBotones" class="col text-center">
 
-            <button id="btnNuevo"  class="btn btn-danger">Nuevo juego</button>
-            <button id="btnPedir"  class="btn btn-primary">Pedir carta</button>
-            <button id="btnDetener"  class="btn btn-primary">Detener</button>
+            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
 
         </div>
     </div>
@@ -26,7 +26,7 @@
     <div class="row container">
         <div class="col">
             <h1>jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="./cartas/10C.png" alt=""> -->
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="row container mt-2">
             <div class="col">
                 <h1>Computadora - <small>0</small></h1>
-                <div id="computadora-cartas">
+                <div id="computadora-cartas" class="divCartas">
                     <!-- <img class="carta" src="./cartas/10H.png" alt=""> -->
                 </div>
             </div>
@@ -42,7 +42,11 @@
     </div>
 
     <script src="./js/underscore-min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
-    <script src="./js/juego.js"></script>
+    <script src="./js/juego-min.js"></script>
+
+    <script>
+        console.log(miModulo);
+        miModulo.nuevoJuego();
+    </script>
 </body>
 </html>
